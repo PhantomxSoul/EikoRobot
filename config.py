@@ -38,13 +38,13 @@ ALONE_OWNER_ID = int(getenv("ALONE_OWNER_ID", "0"))
 # Chat id of a group for logging bot's activities
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "0"))
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/EikoUpdates")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/ShreyaBotSupport")
 
 START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/1gxuh7.jpg")
 
 
-SUPPORT_CHAT = getenv('SUPPORT_CHAT', 'EikoUpdates')
-UPDATE_CHANNEL = getenv('UPDATE_CHANNEL', 'EikoUpdates')
+SUPPORT_CHAT = getenv('SUPPORT_CHAT', 'ShreyaBotSupport')
+UPDATE_CHANNEL = getenv('UPDATE_CHANNEL', 'ShreyaBots')
 
 _logs_channel = getenv('LOGS_CHANNEL') or getenv('LOG_GROUP_ID') or getenv('LOGGER_ID')
 if _logs_channel:
@@ -56,15 +56,15 @@ else:
     LOGS_CHANNEL = None
 
 LOGGER_ID = int(getenv('LOGGER_ID', '0'))
-BOT_USERNAME = getenv('BOT_USERNAME', '@oxnybot')
-BOT_NAME = getenv('BOT_NAME', 'Eiko')
+BOT_USERNAME = getenv('BOT_USERNAME', '@RiyaMusicBot')
+BOT_NAME = getenv('BOT_NAME', 'Riya')
 IS_WEB_SUP = getenv('IS_WEB_SUP', 'True').lower() == 'true'
 
-SUDO_USERS = [int(x) for x in getenv("SUDO_USERS", "8458947967").split() if x.isdigit()]
-SUPPORT_USERS = [int(x) for x in getenv("SUPPORT_USERS", "8458947967").split() if x.isdigit()]
-WHITELIST_USERS = [int(x) for x in getenv("WHITELIST_USERS", "8458947967").split() if x.isdigit()]
-OWNER_ID = int(getenv("OWNER_ID", "8458947967"))
-DEV_LIST = [int(x) for x in getenv("DEV_LIST", "8458947967").split() if x.isdigit()]
+SUDO_USERS = [int(x) for x in getenv("SUDO_USERS", "8491293641").split() if x.isdigit()]
+SUPPORT_USERS = [int(x) for x in getenv("SUPPORT_USERS", "8491293641").split() if x.isdigit()]
+WHITELIST_USERS = [int(x) for x in getenv("WHITELIST_USERS", "8491293641").split() if x.isdigit()]
+OWNER_ID = int(getenv("OWNER_ID", "8491293641"))
+DEV_LIST = [int(x) for x in getenv("DEV_LIST", "8491293641").split() if x.isdigit()]
 
 SPAM_USERS = {}
 
@@ -84,7 +84,7 @@ GIST_TOKEN = getenv('GIST_TOKEN')
 
 
 # keep alive ( web support )
-WEB_URL = getenv('WEB_URL', "https://t.me/ForRealAlone")
+WEB_URL = getenv('WEB_URL', "https://t.me/WTF_Phantom")
 
 KEEP_ALIVE = getenv('KEEP_ALIVE', 'True').lower() == 'true'
 PORT = int(os.environ.get("PORT", 8080))
@@ -187,7 +187,7 @@ AF_USERS.extend(DEV_LIST) # load devs
 
 STREAM_MOD = getenv('STREAM_MOD', 'False').lower() == 'true'
 AF_FILE_DEL_TIME = int(getenv('AF_FILE_DEL_TIME', str(30*60)))
-AF_SUB_CHAT = getenv('AF_SUB_CHAT', "@AloneUpdates")
+AF_SUB_CHAT = getenv('AF_SUB_CHAT', "@ShreyaBots")
 FILE_DB_CHANNEL = int(getenv('FILE_DB_CHANNEL', '0')) # file store channel
 AF_SUB_TEXT = getenv('AF_SUB_TEXT', """
 <blockquote><b>
